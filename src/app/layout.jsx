@@ -15,11 +15,11 @@ export const metadata = {
   openGraph: {
     title: "Undangan Selin dan Aan",
     description: "Undangan Pernikahan Selin ❤️ Aan",
-    url: "https://undangan-selin.vercel.app/",
+    url: "https://undangan-selin-aan.vercel.app/",
     type: "website",
     images: [
       {
-        url: "https://undangan-selin.vercel.app/images/thumbnail.png",
+        url: "https://undangan-selin-aan.vercel.app/images/thumbnail.webp",
         width: 1200,
         height: 630,
         alt: "Undangan Pernikahan Selin ❤️ Aan",
@@ -30,7 +30,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Undangan Pernikahan Selin ❤️ Aan",
     description: "Pernikahan Masselina Astika dan Ananda Hadi Wijaya",
-    images: ["https://undangan-selin.vercel.app/images/thumbnail.png"],
+    images: ["https://undangan-selin-aan.vercel.app/images/thumbnail.webp"],
   },
 };
 
