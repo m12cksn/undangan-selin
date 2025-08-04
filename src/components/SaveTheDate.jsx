@@ -23,22 +23,22 @@ const SaveTheDate = () => {
     {
       title: "Akad Nikah",
       img: "/images/marriage.png",
-      day: "Kamis, 15 Oktober, 2023",
-      time: "at 09:00 WIB - finish",
-      alamat: "Jalan Sultan Hasanudin, Panakukang. di Masjid Al Barokah",
+      day: "Senin, 11 Agustus, 2025",
+      time: "at 08:00 WIB - Selesai",
+      alamat: "Jl. Teri, RT. 002 / 014 Kel-Cilacap. Kec. Cilacap - Selatan",
     },
     {
       title: "Resepsi Pernikahan",
       img: "/images/wedding.png",
-      day: "Kamis, 15 Oktober, 2023",
-      time: "at 09:00 WIB - finish",
-      alamat: "Jalan Sultan Hasanudin, Panakukang. di Masjid Al Barokah",
+      day: "Senin, 11 Agustus, 2025",
+      time: "at 10:00 WIB - selesai",
+      alamat: "Jl. Teri, RT. 002 / 014 Kel-Cilacap. Kec. Cilacap - Selatan",
     },
   ];
   return (
     <div id="date">
       <div className="flex justify-center">
-        <div className="bg-[url('/images/bghero.webp')] bg-cover relative bg-center bg-opacity-20 max-w-sm py-28 w-full flex flex-col justify-center items-center overflow-hidden px-8">
+        <div className="bg-[url('/images/selin.jpg')] bg-cover relative bg-center bg-opacity-20 max-w-sm py-28 w-full flex flex-col justify-center items-center overflow-hidden px-8">
           <div className="w-full backdrop-filter backdrop-blur-lg bg-white/50 bg-center py-5 ">
             {contents.map((content, index) => (
               <div
@@ -85,8 +85,6 @@ const SaveTheDate = () => {
           </div>
           <TopLeft />
           <TopRight />
-          <BtmLeft />
-          <BtmRight />
         </div>
       </div>
     </div>

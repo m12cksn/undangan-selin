@@ -11,7 +11,7 @@ const Gallery = () => {
   return (
     <div id="gallery">
       <div className="flex justify-center  mx-auto">
-        <div className="bg-[url('/images/bghero.webp')] bg-cover relative bg-center bg-opacity-20 max-w-sm py-28 w-full flex flex-col justify-center items-center overflow-hidden px-8">
+        <div className="bg-[url('/images/selin.jpg')] bg-cover relative bg-center bg-opacity-20 max-w-sm py-28 w-full flex flex-col justify-center items-center overflow-hidden px-8">
           <h1
             className={`${berkshire.className} xl:text-xl text-slate-700 text-3xl text-center mb-5`}
           >
@@ -20,8 +20,6 @@ const Gallery = () => {
           <ImageGallery />
           <BtmLeft />
           <BtmRight />
-          <TopLeft />
-          <TopRight />
         </div>
       </div>
     </div>

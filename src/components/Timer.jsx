@@ -13,7 +13,7 @@ const Timer = () => {
     });
   }, []);
   // Inisialisasi tanggal target dengan hanya mengatur tanggal
-  const targetDate = new Date("2024-08-28");
+  const targetDate = new Date("2025-08-11");
   targetDate.setHours(0, 0, 0, 0); // Jam, menit, dan detik diatur menjadi 0
 
   // Inisialisasi state untuk waktu
@@ -59,27 +59,33 @@ const Timer = () => {
       data-aos-duration="1500"
       className="max-w-sm mt-5 flex justify-evenly "
     >
-      <div className="bg-indigo-400 w-16 h-16 shadow rounded flex justify-center items-center flex-col">
-        <h1 className="text-slate-50 text-center">{countdown.days}</h1>
-        <h1 className="text-slate-50 text-[0.5rem] text-center  uppercase">
+      <div className="bg-indigo-400 w-20 h-20 shadow rounded flex justify-center items-center flex-col">
+        <h1 className="text-slate-50 text-2xl text-center">{countdown.days}</h1>
+        <h1 className="text-slate-50 text-xl text-[0.5rem] text-center  uppercase">
           Days
         </h1>
       </div>
-      <div className="bg-indigo-400 w-16 h-16 shadow rounded flex justify-center items-center flex-col">
-        <h1 className="text-slate-50 text-center">{countdown.hours}</h1>
-        <h1 className="text-slate-50 text-[0.5rem] text-center  uppercase">
+      <div className="bg-indigo-400 w-20 h-20 shadow rounded flex justify-center items-center flex-col">
+        <h1 className="text-slate-50 text-2xl text-center">
+          {countdown.hours}
+        </h1>
+        <h1 className="text-slate-50 text-xl text-[0.5rem] text-center  uppercase">
           hours
         </h1>
       </div>
-      <div className="bg-indigo-400 w-16 h-16 shadow rounded flex justify-center items-center flex-col">
-        <h1 className="text-slate-50 text-center">{countdown.minutes}</h1>
-        <h1 className="text-slate-50 text-[0.5rem] text-center  uppercase">
+      <div className="bg-indigo-400 w-20 h-20 shadow rounded flex justify-center items-center flex-col">
+        <h1 className="text-slate-50 text-2xl text-center">
+          {countdown.minutes}
+        </h1>
+        <h1 className="text-slate-50 text-xl text-[0.5rem] text-center  uppercase">
           Minutes
         </h1>
       </div>
-      <div className="bg-indigo-400 w-16 h-16 shadow rounded flex justify-center items-center flex-col">
-        <h1 className="text-slate-50 text-center">{countdown.seconds}</h1>
-        <h1 className="text-slate-50 text-[0.5rem] text-center  uppercase">
+      <div className="bg-indigo-400 w-20 h-20 shadow rounded flex justify-center items-center flex-col">
+        <h1 className="text-slate-50 text-2xl text-center">
+          {countdown.seconds}
+        </h1>
+        <h1 className="text-slate-50 text-xl text-[0.5rem] text-center  uppercase">
           seconds
         </h1>
       </div>

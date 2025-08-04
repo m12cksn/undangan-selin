@@ -20,16 +20,20 @@ const Main = () => {
   return (
     <div id="main" className="flex justify-center">
       <div
-        className="bg-[url('/images/bghero.webp')] bg-cover relative bg-center bg-opacity-20 max-w-sm py-40 w-full flex justify-center items-center overflow-hidden"
+        className="bg-[url('/images/selin.jpg')] bg-cover relative bg-center max-w-sm py-40 w-full flex justify-center items-center overflow-hidden"
         id="main-section"
       >
-        <div>
+        {/* Overlay gelap transparan */}
+        <div className="absolute inset-0 bg-black bg-opacity-50 z-0"></div>
+
+        {/* Konten utama */}
+        <div className="z-10 text-white text-center">
           <Image
             data-aos="fade-up"
             data-aos-easing="linear"
             data-aos-duration="1500"
-            className="w-80  animate-wiggle animate-infinite animate-duration-[7000ms] animate-delay-1000 animate-ease-in animate-reverse animate-fill-both "
-            src="/images/mainimg.webp"
+            className="w-96 animate-wiggle animate-infinite animate-duration-[7000ms] animate-delay-1000 animate-ease-in animate-reverse animate-fill-both"
+            src="/images/selinmain.webp"
             width={500}
             height={500}
             alt="Cruise"
@@ -39,7 +43,7 @@ const Main = () => {
             data-aos="fade-up"
             data-aos-easing="linear"
             data-aos-duration="1500"
-            className={`${berkshire.className} text-slate-900 text-xl text-center mb-2`}
+            className={`${berkshire.className} text-xl mb-2`}
           >
             The Wedding of
           </h1>
@@ -47,16 +51,16 @@ const Main = () => {
             data-aos="fade-up"
             data-aos-easing="linear"
             data-aos-duration="1500"
-            className={`${berkshire.className} text-4xl text-slate-900 text-center mb-2`}
+            className={`${berkshire.className} text-4xl mb-2`}
           >
-            Dosan & Dalmi
+            Selin ❤️ Aan
           </h2>
           <Timer />
         </div>
+
+        {/* Ornamen */}
         <TopLeft />
         <TopRight />
-        <BtmLeft />
-        <BtmRight />
       </div>
     </div>
   );

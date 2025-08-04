@@ -1,107 +1,128 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import { berkshire } from "@/app/fonts";
-import Image from "next/image";
-import { useState, useEffect } from "react";
-import { IoTimeOutline } from "react-icons/io5";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { supabase } from "@/lib/supabaseClient";
 import TopLeft from "./ornaments/TopLeft";
 import TopRight from "./ornaments/TopRight";
 import BtmLeft from "./ornaments/BtmLeft";
 import BtmRight from "./ornaments/BtmRight";
-import AOS from "aos";
-import "aos/dist/aos.css"; // Import CSS AOS
 
 const RSVP = () => {
+  const [nama, setNama] = useState("");
+  const [pesan, setPesan] = useState("");
+  const [kehadiran, setKehadiran] = useState("Hadir");
+  const [messages, setMessages] = useState([]);
+
   useEffect(() => {
-    AOS.init({
-      /* opsi konfigurasi AOS */
-    });
+    AOS.init();
+    fetchMessages();
   }, []);
-  const texts = [
-    {
-      message: " Semoga Menjadi Keluarga sakinah mawadah warahmah",
-      name: "Raisa",
-    },
-    {
-      message: " Maaf tidak bisa datang, semoga lancar semuanya sampai hari H",
-      name: "Adrian",
-    },
-    {
-      message: "Selamat guyss, semoga dapat hadir yaa di acara pernikahannya",
-      name: "Dimas",
-    },
-  ];
+
+  const fetchMessages = async () => {
+    const { data, error } = await supabase
+      .from("rsvp_messages")
+      .select("*")
+      .order("created_at", { ascending: false });
+
+    if (!error) {
+      setMessages(data);
+    }
+  };
+
+  const handleSubmit = async () => {
+    if (!nama || !pesan) {
+      alert("Harap isi nama dan pesan.");
+      return;
+    }
+
+    const { error } = await supabase.from("rsvp_messages").insert([
+      {
+        nama,
+        pesan,
+        kehadiran,
+      },
+    ]);
+
+    if (error) {
+      alert("Gagal mengirim data");
+    } else {
+      setNama("");
+      setPesan("");
+      setKehadiran("Hadir");
+      fetchMessages();
+    }
+  };
+
   return (
     <div id="rsvp">
-      <div className="flex justify-center  mx-auto">
-        <div className="bg-[url('/images/bghero.webp')] bg-cover relative bg-center bg-opacity-20 max-w-sm py-28 w-full flex flex-col justify-center items-center overflow-hidden px-8">
-          <div
-            data-aos="fade-up"
-            data-aos-easing="linear"
-            data-aos-duration="1500"
-            className="w-full backdrop-filter backdrop-blur-lg bg-white/50 bg-center p-5  mt-3 "
-          >
+      <div className="flex justify-center mx-auto">
+        <div className="bg-[url('/images/selin.jpg')] bg-cover relative bg-center bg-opacity-20 max-w-sm py-28 w-full flex flex-col justify-center items-center overflow-hidden px-8">
+          {/* Form RSVP */}
+          <div className="w-full backdrop-filter backdrop-blur-lg bg-white/50 p-5 mt-3">
             <h1
-              className={`${berkshire.className} xl:text-xl text-slate-700 text-xl text-center mb-5`}
+              className={`${berkshire.className} text-xl text-slate-700 text-center mb-5`}
             >
               Konfirmasi Kehadiran
             </h1>
             <div className="flex flex-col gap-1">
-              <label className="text-slate-800" htmlFor="nama">
-                Nama
-              </label>
+              <label className="text-slate-800">Nama</label>
               <input
                 type="text"
-                id="nama"
-                value=""
-                className="h-9 p-3 shadow rounded"
+                value={nama}
+                onChange={(e) => setNama(e.target.value)}
+                className="h-9 p-3 shadow rounded text-gray-900"
                 placeholder="Your Name ...."
               />
             </div>
             <div className="flex flex-col gap-1 mt-5">
-              <label className="text-slate-800" htmlFor="nama">
-                Ucapan dan Do'a
-              </label>
+              <label className="text-slate-800">Ucapan dan Do'a</label>
               <textarea
                 rows={5}
-                type="text"
-                id="nama"
-                value=""
-                className="rounded shadow p-3"
+                value={pesan}
+                onChange={(e) => setPesan(e.target.value)}
+                className="rounded shadow p-3 text-gray-900"
               />
             </div>
             <div className="flex flex-col gap-1 mt-5">
-              <label className="text-slate-800" htmlFor="nama">
-                Kehadiran
-              </label>
-              <select className="h-9 p-2" name="" id="">
-                <option value="hadir">Hadir</option>
-                <option value="hadir">Tidak Hadir</option>
+              <label className="text-slate-800">Kehadiran</label>
+              <select
+                value={kehadiran}
+                onChange={(e) => setKehadiran(e.target.value)}
+                className="h-9 p-2 text-gray-900"
+              >
+                <option value="Hadir">Hadir</option>
+                <option value="Tidak Hadir">Tidak Hadir</option>
               </select>
             </div>
             <div className="flex justify-start mt-5">
-              <button className="px-5 py-1 bg-purple-500 rounded shadow text-slate-100">
+              <button
+                onClick={handleSubmit}
+                className="px-5 py-1 bg-purple-500 rounded shadow text-slate-100"
+              >
                 Submit
               </button>
             </div>
           </div>
-          <div
-            data-aos="fade-up"
-            data-aos-easing="linear"
-            data-aos-duration="1500"
-            className="w-full backdrop-filter backdrop-blur-lg bg-white/50 bg-center p-5 mt-3 flex flex-col gap-3 h-96 overflow-scroll"
-          >
+
+          {/* List Ucapan */}
+          <div className="w-full backdrop-filter backdrop-blur-lg bg-white/50 p-5 mt-3 flex flex-col gap-3 h-96 overflow-scroll">
             <h1
-              className={`${berkshire.className} xl:text-xl text-slate-700 text-xl text-center `}
+              className={`${berkshire.className} text-xl text-slate-700 text-center`}
             >
               Ucapan Teman & Kerabat
             </h1>
-            {texts.map((text, index) => (
+            {messages.map((msg, index) => (
               <div key={index} className="bg-white p-3 rounded">
-                <h1 className="text-slate-700">{text.message}</h1>
-                <p className="text-xs text-slate-500 mt-1">{text.name}</p>
+                <h1 className="text-slate-700">{msg.pesan}</h1>
+                <p className="text-xs text-slate-500 mt-1">
+                  {msg.nama} – {msg.kehadiran}
+                </p>
               </div>
             ))}
           </div>
+
           <TopLeft />
           <TopRight />
           <BtmLeft />

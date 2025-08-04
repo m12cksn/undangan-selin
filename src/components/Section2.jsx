@@ -17,7 +17,7 @@ const Section2 = () => {
   return (
     <div id="section2" className="flex justify-center">
       <div
-        className="bg-[url('/images/bghero.webp')] bg-cover relative bg-center bg-opacity-20 max-w-sm py-28 w-full flex justify-center items-center overflow-hidden "
+        className="bg-[url('/images/selin.jpg')] bg-cover relative bg-center bg-opacity-20 max-w-sm py-28 w-full flex justify-center items-center overflow-hidden "
         id="opening-section"
       >
         <TopCenter />
@@ -36,7 +36,7 @@ const Section2 = () => {
             data-aos-duration="1500"
             className={`${berkshire.className} text-4xl text-slate-900 text-center mb-5`}
           >
-            Dosan & Dalmi
+            Selin ❤️ Aan
           </h2>
           <p
             data-aos="fade-up"
@@ -53,8 +53,8 @@ const Section2 = () => {
             data-aos="fade-up"
             data-aos-easing="linear"
             data-aos-duration="1500"
-            className="w-80   mb-7"
-            src="/images/heroimage.webp"
+            className="max-w-sm mb-7"
+            src="/images/openingselin.webp"
             width={500}
             height={500}
             alt="Cruise"
@@ -83,8 +83,6 @@ const Section2 = () => {
           alt="Cruise"
           priority={true}
         />
-        <BtmLeft />
-        <BtmRight />
       </div>
     </div>
   );

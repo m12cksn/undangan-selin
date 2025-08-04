@@ -17,23 +17,24 @@ const Mempelai = () => {
   }, []);
   const contents = [
     {
-      img: "/images/wanita.webp",
-      name: "Seo Dal Mi",
-      parent: "Putri dari Bpk. Dal Ma di & Ibu Seo In Ah",
-      alamat: "Alamat Jakarta",
+      img: "/images/wanitaselin.webp",
+      name: "Masselina Astika",
+      parent: "Putri dari Bpk. Maryanus & Ibu Sampen",
+      alamat: "Jl. Teri - Cilacap Selatan",
     },
     {
-      img: "/images/pria.webp",
-      name: "Nam Do San",
-      parent: "Putri dari Bpk. Dal Ma di & Ibu Seo In Ah",
-      alamat: "Alamat Jakarta",
+      img: "/images/priaselin.webp",
+      name: "Ananda Hadi Wijaya",
+      parent:
+        "Putra dari Bpk. Paryadi (Pensiunan kecamatan kesugihan) &  Ibu.Munawaroh",
+      alamat: "Gumilir - Cilacap Utara",
     },
   ];
 
   return (
     <div className="flex justify-center">
       <div
-        className="bg-[url('/images/bg2.webp')] bg-cover relative bg-center bg-opacity-20 max-w-sm py-28 w-full flex justify-center items-center overflow-hidden "
+        className="bg-[url('/images/selin.jpg')] bg-cover relative bg-center bg-opacity-20 max-w-sm py-28 w-full flex justify-center items-center overflow-hidden "
         id="opening-section"
       >
         <div className="flex flex-col items-center">
@@ -53,7 +54,7 @@ const Mempelai = () => {
               className=" flex mt-5 flex-col items-center h-full  bg-white-0 rounded-md bg-clip-padding backdrop-filter py-3 backdrop-blur-md bg-opacity-40 border border-gray-100"
             >
               <Image
-                className="w-48   mb-7"
+                className="w-64 mb-7"
                 src={content.img}
                 width={500}
                 height={500}

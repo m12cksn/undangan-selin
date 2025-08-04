@@ -26,21 +26,6 @@ const imageGallery = () => {
     {
       img: "/images/gallery/image6.webp",
     },
-    {
-      img: "/images/gallery/image7.webp",
-    },
-    {
-      img: "/images/gallery/image8.webp",
-    },
-    {
-      img: "/images/gallery/image10.webp",
-    },
-    {
-      img: "/images/gallery/image11.webp",
-    },
-    {
-      img: "/images/gallery/image12.webp",
-    },
   ];
   return (
     <div className="w-full grid grid-cols-2 gap-2">
