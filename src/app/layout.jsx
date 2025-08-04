@@ -15,11 +15,11 @@ export const metadata = {
   openGraph: {
     title: "Undangan Selin dan Aan",
     description: "Undangan Pernikahan Selin ❤️ Aan",
-    url: "https://undanganarsyad.vercel.app",
+    url: "https://undangan-selin.vercel.app/",
     type: "website",
     images: [
       {
-        url: "https://undangankhitanarsyad.vercel.app/images/thumbnail.png",
+        url: "https://undangan-selin.vercel.app/images/thumbnail.png",
         width: 1200,
         height: 630,
         alt: "Undangan Pernikahan Selin ❤️ Aan",
@@ -28,9 +28,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Undangan Arsyad",
-    description: "Walimatul Khitan Arsyad Haafizh Virendra",
-    images: ["https://undangankhitanarsyad.vercel.app/images/thumbnail.png"],
+    title: "Undangan Pernikahan Selin ❤️ Aan",
+    description: "Pernikahan Masselina Astika dan Ananda Hadi Wijaya",
+    images: ["https://undangan-selin.vercel.app/images/thumbnail.png"],
   },
 };
 
