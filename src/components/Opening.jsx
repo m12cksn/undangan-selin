@@ -29,9 +29,8 @@ const Opening = ({ onButtonClick }) => {
   return (
     <div className="flex justify-center">
       <div className="bg-[url('/jeni/bgjeni.jpeg')] bg-cover relative bg-center bg-opacity-20 max-w-sm py-40 w-full flex h-screen justify-center items-center overflow-hidden">
-        <div className="bg-black opacity-50 backdrop-filter backdrop-blur-2xl h-screen w-full absolute"></div>
-        <div>
-          <div className="bg-white/90 backdrop-filter backdrop-blur-sm max-w-xs opacity-80 p-5">
+        <div className="bg-black opacity-50 backdrop-filter backdrop-blur-2xl h-screen w-full absolute pointer-events-none"></div>
+        <div className="relative z-10">`r`n          <div className="bg-white/90 backdrop-filter backdrop-blur-sm max-w-xs opacity-80 p-5">
             <h1
               className={`${berkshire.className} xl:text-3xl text-slate-900 text-xl text-center mb-5`}
             >
@@ -84,3 +83,4 @@ const Opening = ({ onButtonClick }) => {
 };
 
 export default Opening;
+

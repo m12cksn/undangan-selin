@@ -1,7 +1,6 @@
+"use client";
 import React, { useEffect, useState, useRef } from "react";
 import { Howl } from "howler";
-import Pause from "@/components/utils/PauseButton";
-import Play from "@/components/utils/PlayButton";
 import PauseButton from "@/components/utils/PauseButton";
 import PlayButton from "@/components/utils/PlayButton";
 
@@ -22,6 +21,13 @@ const AudioPlayer = ({ audioSrc }) => {
       });
       soundRef.current.play();
     }
+
+    return () => {
+      if (soundRef.current) {
+        soundRef.current.unload();
+        soundRef.current = null;
+      }
+    };
   }, [audioSrc]);
 
   const togglePlay = () => {
@@ -34,9 +40,10 @@ const AudioPlayer = ({ audioSrc }) => {
       setIsPlaying(!isPlaying);
     }
   };
+
   return (
-    <div className="w-16 z-50 fixed top-5    mx-auto left-1/2 -translate-x-1/2">
-      <button className="w-16 drop-shadow-md " onClick={togglePlay}>
+    <div className="w-16 z-50 fixed top-5 mx-auto left-1/2 -translate-x-1/2">
+      <button className="w-16 drop-shadow-md" onClick={togglePlay}>
         {isPlaying ? <PauseButton /> : <PlayButton />}
       </button>
     </div>

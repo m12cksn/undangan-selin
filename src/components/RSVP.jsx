@@ -21,6 +21,10 @@ const RSVP = () => {
   }, []);
 
   const fetchMessages = async () => {
+    if (!supabase) {
+      return;
+    }
+
     const { data, error } = await supabase
       .from("rsvp_messages")
       .select("*")
@@ -34,6 +38,11 @@ const RSVP = () => {
   const handleSubmit = async () => {
     if (!nama || !pesan) {
       alert("Harap isi nama dan pesan.");
+      return;
+    }
+
+    if (!supabase) {
+      alert("Fitur RSVP belum aktif. Konfigurasi Supabase belum diatur.");
       return;
     }
 
@@ -59,7 +68,6 @@ const RSVP = () => {
     <div id="rsvp">
       <div className="flex justify-center mx-auto">
         <div className="bg-[url('/images/selin.jpg')] bg-cover relative bg-center bg-opacity-20 max-w-sm py-28 w-full flex flex-col justify-center items-center overflow-hidden px-8">
-          {/* Form RSVP */}
           <div className="w-full backdrop-filter backdrop-blur-lg bg-white/50 p-5 mt-3">
             <h1
               className={`${berkshire.className} text-xl text-slate-700 text-center mb-5`}
@@ -106,7 +114,6 @@ const RSVP = () => {
             </div>
           </div>
 
-          {/* List Ucapan */}
           <div className="w-full backdrop-filter backdrop-blur-lg bg-white/50 p-5 mt-3 flex flex-col gap-3 h-96 overflow-scroll">
             <h1
               className={`${berkshire.className} text-xl text-slate-700 text-center`}
@@ -117,7 +124,7 @@ const RSVP = () => {
               <div key={index} className="bg-white p-3 rounded">
                 <h1 className="text-slate-700">{msg.pesan}</h1>
                 <p className="text-xs text-slate-500 mt-1">
-                  {msg.nama} – {msg.kehadiran}
+                  {msg.nama} - {msg.kehadiran}
                 </p>
               </div>
             ))}
