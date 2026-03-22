@@ -19,7 +19,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "https://undangan-jeni-sodik.vercel.app/images/gallery/image.png?v=2",
+        url: "https://undangan-jeni-sodik.vercel.app/images/gallery/thumbnail.webp",
         width: 1200,
         height: 630,
         alt: "Undangan Pernikahan Jeni ❤️ Sodik",
@@ -30,7 +30,9 @@ export const metadata = {
     card: "summary_large_image",
     title: "Undangan Pernikahan Jeni ❤️ Sodik",
     description: "Pernikahan Jeni Nur Azizah dan Sodik Hermawan",
-    images: ["https://undangan-jeni-sodik.vercel.app/images/gallery/image.png?v=2"],
+    images: [
+      "https://undangan-jeni-sodik.vercel.app/images/gallery/thumbnail.webp",
+    ],
   },
 };
 
@@ -41,4 +43,3 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
-
