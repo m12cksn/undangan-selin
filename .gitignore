@@ -19,6 +19,8 @@
 # misc
 .DS_Store
 *.pem
+/public/images/gallery/
+/public/music/music.MP3
 
 # debug
 npm-debug.log*
@@ -34,3 +36,4 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+

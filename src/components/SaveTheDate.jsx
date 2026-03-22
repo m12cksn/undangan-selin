@@ -23,16 +23,16 @@ const SaveTheDate = () => {
     {
       title: "Akad Nikah",
       img: "/images/marriage.png",
-      day: "Senin, 11 Agustus, 2025",
+      day: "Jumat, 27 Maret, 2026",
       time: "at 08:00 WIB - Selesai",
-      alamat: "Jl. Teri, RT. 002 / 014 Kel-Cilacap. Kec. Cilacap - Selatan",
+      alamat: "Desa Ujung Alang, Kampung laut - Cilacap",
     },
     {
       title: "Resepsi Pernikahan",
       img: "/images/wedding.png",
-      day: "Senin, 11 Agustus, 2025",
+      day: "Jumat, 27 Maret, 2026",
       time: "at 10:00 WIB - selesai",
-      alamat: "Jl. Teri, RT. 002 / 014 Kel-Cilacap. Kec. Cilacap - Selatan",
+      alamat: "Desa Ujung Alang, Kampung laut - Cilacap",
     },
   ];
   return (
@@ -80,9 +80,7 @@ const SaveTheDate = () => {
             ))}
             <Timer />
           </div>
-          <div className="">
-            <Maps />
-          </div>
+          <div className="">{/* <Maps /> */}</div>
           <TopLeft />
           <TopRight />
         </div>

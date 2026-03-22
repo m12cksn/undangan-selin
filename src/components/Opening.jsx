@@ -28,7 +28,7 @@ const Opening = ({ onButtonClick }) => {
   }, []);
   return (
     <div className="flex justify-center">
-      <div className="bg-[url('/images/bgselin2.webp')] bg-cover relative bg-center bg-opacity-20 max-w-sm py-40 w-full flex h-screen justify-center items-center overflow-hidden">
+      <div className="bg-[url('/jeni/bgjeni.jpeg')] bg-cover relative bg-center bg-opacity-20 max-w-sm py-40 w-full flex h-screen justify-center items-center overflow-hidden">
         <div className="bg-black opacity-50 backdrop-filter backdrop-blur-2xl h-screen w-full absolute"></div>
         <div>
           <div className="bg-white/90 backdrop-filter backdrop-blur-sm max-w-xs opacity-80 p-5">
@@ -40,14 +40,14 @@ const Opening = ({ onButtonClick }) => {
             <h2
               className={`${berkshire.className} text-4xl xl:text-5xl text-slate-900 text-center mb-7`}
             >
-              Selin ❤️ Aan
+              Jeni ❤️ Sodik
             </h2>
             <Image
               data-aos="fade-up"
               data-aos-easing="linear"
               data-aos-duration="1500"
               className="w-80 xl:w-[30rem] animate-wiggle animate-infinite animate-duration-[7000ms] animate-delay-1000 animate-ease-in animate-reverse animate-fill-both mb-5"
-              src="/images/selinmain.webp"
+              src="/jeni/main.png"
               width={500}
               height={500}
               alt="Cruise"

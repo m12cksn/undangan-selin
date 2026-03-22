@@ -36,7 +36,7 @@ const Section2 = () => {
             data-aos-duration="1500"
             className={`${berkshire.className} text-4xl text-slate-900 text-center mb-5`}
           >
-            Selin ❤️ Aan
+            Jeni ❤️ Sodik
           </h2>
           <p
             data-aos="fade-up"
@@ -54,7 +54,7 @@ const Section2 = () => {
             data-aos-easing="linear"
             data-aos-duration="1500"
             className="max-w-sm mb-7"
-            src="/images/openingselin.webp"
+            src="/jeni/main.png"
             width={500}
             height={500}
             alt="Cruise"

@@ -33,7 +33,7 @@ const Main = () => {
             data-aos-easing="linear"
             data-aos-duration="1500"
             className="w-96 animate-wiggle animate-infinite animate-duration-[7000ms] animate-delay-1000 animate-ease-in animate-reverse animate-fill-both"
-            src="/images/selinmain.webp"
+            src="/jeni/bgjeni.png"
             width={500}
             height={500}
             alt="Cruise"
@@ -53,7 +53,7 @@ const Main = () => {
             data-aos-duration="1500"
             className={`${berkshire.className} text-4xl mb-2`}
           >
-            Selin ❤️ Aan
+            Jeni ❤️ Sodik
           </h2>
           <Timer />
         </div>

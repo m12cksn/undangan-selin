@@ -13,7 +13,7 @@ const Timer = () => {
     });
   }, []);
   // Inisialisasi tanggal target dengan hanya mengatur tanggal
-  const targetDate = new Date("2025-08-11");
+  const targetDate = new Date("2026-03-27");
   targetDate.setHours(0, 0, 0, 0); // Jam, menit, dan detik diatur menjadi 0
 
   // Inisialisasi state untuk waktu
@@ -34,7 +34,7 @@ const Timer = () => {
       const newCountdown = {
         days: Math.floor(timeRemaining / (1000 * 60 * 60 * 24)),
         hours: Math.floor(
-          (timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+          (timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
         ),
         minutes: Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60)),
         seconds: Math.floor((timeRemaining % (1000 * 60)) / 1000),

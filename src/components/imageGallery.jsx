@@ -12,19 +12,22 @@ const imageGallery = () => {
   }, []);
   const images = [
     {
-      img: "/images/gallery/image1.webp",
+      img: "/jeni/1.jpeg",
     },
     {
-      img: "/images/gallery/image2.webp",
+      img: "/jeni/2.jpeg",
     },
     {
-      img: "/images/gallery/image4.webp",
+      img: "/jeni/3.jpeg",
     },
     {
-      img: "/images/gallery/image5.webp",
+      img: "/jeni/4.jpeg",
     },
     {
-      img: "/images/gallery/image6.webp",
+      img: "/jeni/5.jpeg",
+    },
+    {
+      img: "/jeni/6.jpeg",
     },
   ];
   return (

@@ -7,30 +7,30 @@ import { poppins } from "./fonts";
 import { truculenta } from "./fonts";
 
 export const metadata = {
-  title: "Undangan Selin dan Aan",
-  description: "Undangan Pernikahan Selin ❤️ Aan",
+  title: "Undangan Jeni dan Sodik",
+  description: "Undangan Pernikahan Jeni ❤️ Sodik",
   icons: {
     icon: "/favicon.ico", // Pastikan sesuai dengan path di folder public
   },
   openGraph: {
-    title: "Undangan Selin dan Aan",
-    description: "Undangan Pernikahan Selin ❤️ Aan",
-    url: "https://undangan-selin-aan.vercel.app/",
+    title: "Undangan Jeni dan Sodik",
+    description: "Undangan Pernikahan Jeni ❤️ Sodik",
+    url: "https://undangan-Jeni-Sodik.vercel.app/",
     type: "website",
     images: [
       {
-        url: "https://undangan-selin-aan.vercel.app/images/thumbnail.webp",
+        url: "https://undangan-Jeni-Sodik.vercel.app/images/thumbnail.webp",
         width: 1200,
         height: 630,
-        alt: "Undangan Pernikahan Selin ❤️ Aan",
+        alt: "Undangan Pernikahan Jeni ❤️ Sodik",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Undangan Pernikahan Selin ❤️ Aan",
-    description: "Pernikahan Masselina Astika dan Ananda Hadi Wijaya",
-    images: ["https://undangan-selin-aan.vercel.app/images/thumbnail.webp"],
+    title: "Undangan Pernikahan Jeni ❤️ Sodik",
+    description: "Pernikahan Jeni Nur Azizah dan Sodik Hermawan",
+    images: ["https://undangan-Jeni-Sodik.vercel.app/images/thumbnail.webp"],
   },
 };
 

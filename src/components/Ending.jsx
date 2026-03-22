@@ -52,17 +52,13 @@ const Ending = () => {
                     data-aos-easing="linear"
                     data-aos-duration="1500"
                     className="text-3xl text-slate-700"
-                  >
-                    Masselina
-                  </h1>
+                  ></h1>
                   <h1
                     data-aos="fade-up"
                     data-aos-easing="linear"
                     data-aos-duration="1500"
                     className="text-2xl text-slate-700"
-                  >
-                    0961270811
-                  </h1>
+                  ></h1>
                 </div>
               </div>
 
@@ -104,17 +100,13 @@ const Ending = () => {
                     data-aos-easing="linear"
                     data-aos-duration="1500"
                     className="text-2xl max-w-xl  text-slate-700"
-                  >
-                    Ananda Hadi Wijaya
-                  </h1>
+                  ></h1>
                   <h1
                     data-aos="fade-up"
                     data-aos-easing="linear"
                     data-aos-duration="1500"
                     className="text-2xl text-slate-700"
-                  >
-                    0961082519
-                  </h1>
+                  ></h1>
                 </div>
               </div>
 
@@ -135,7 +127,7 @@ const Ending = () => {
               data-aos-easing="linear"
               data-aos-duration="1500"
               className="max-w-xs mt-10 xl:w-[30rem] animate-wiggle animate-infinite animate-duration-[7000ms] animate-delay-1000 animate-ease-in animate-reverse animate-fill-both mb-7 mx-auto"
-              src="/images/selinmain.webp"
+              src="/jeni/bgjeni.png"
               width={500}
               height={500}
               alt="Cruise"
@@ -157,7 +149,7 @@ const Ending = () => {
             data-aos-duration="1500"
             className={`${berkshire.className} text-2xl mt-3 text-slate-700 text-center mb-4`}
           >
-            Selin & Aan
+            Jeni & Sodik
           </h1>
         </div>
 

@@ -17,17 +17,16 @@ const Mempelai = () => {
   }, []);
   const contents = [
     {
-      img: "/images/wanitaselin.webp",
-      name: "Masselina Astika",
-      parent: "Putri dari Bpk. Maryanus & Ibu Sampen",
-      alamat: "Jl. Teri - Cilacap Selatan",
+      img: "/jeni/jeni.png",
+      name: "Jeni Nur Azizah",
+      parent: "Putri dari Bpk. Sukirno & Ibu Rini",
+      alamat: "Ujung Alang",
     },
     {
-      img: "/images/priaselin.webp",
-      name: "Ananda Hadi Wijaya",
-      parent:
-        "Putra dari Bpk. Paryadi (Pensiunan kecamatan kesugihan) &  Ibu.Munawaroh",
-      alamat: "Gumilir - Cilacap Utara",
+      img: "/jeni/sodik.png",
+      name: "Sodik Hermawan",
+      parent: "Putra dari Bpk. Sumber &  Ibu. Manisem",
+      alamat: "Ujung Alang",
     },
   ];
 
