@@ -5,10 +5,6 @@ import { useState, useEffect } from "react";
 import { berkshire } from "@/app/fonts";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import TopLeft from "./ornaments/TopLeft";
-import TopRight from "./ornaments/TopRight";
-import BtmLeft from "./ornaments/BtmLeft";
-import BtmRight from "./ornaments/BtmRight";
 
 const Opening = ({ onButtonClick }) => {
   const [nama, setNama] = useState("");
@@ -74,13 +70,41 @@ const Opening = ({ onButtonClick }) => {
             </h1>
             <h1 className="text-slate-500 text-base sm:text-lg text-center">ditempat</h1>
           </div>
+        </div>
 
-          <div className="pointer-events-none hidden sm:block">
-            <TopLeft />
-            <TopRight />
-            <BtmLeft />
-            <BtmRight />
-          </div>
+        <div className="pointer-events-none absolute inset-0 z-10">
+          <Image
+            className="w-28 sm:w-52 animate-jump animate-infinite animate-duration-[7000ms] animate-delay-1000 animate-ease-in animate-reverse animate-fill-both ease-in-out object-contain absolute -top-6 sm:-top-10 -left-6 sm:-left-10"
+            src="/images/top_left.webp"
+            width={500}
+            height={500}
+            alt="Ornamen kiri atas"
+            priority={true}
+          />
+          <Image
+            className="w-28 sm:w-52 animate-jump animate-infinite animate-duration-[7000ms] animate-delay-1000 animate-ease-in animate-reverse animate-fill-both ease-in-out object-contain absolute -top-6 sm:-top-10 -right-6 sm:-right-10"
+            src="/images/top_right.webp"
+            width={500}
+            height={500}
+            alt="Ornamen kanan atas"
+            priority={true}
+          />
+          <Image
+            className="w-28 sm:w-52 animate-jump animate-infinite animate-duration-[7000ms] animate-delay-1000 animate-ease-in animate-reverse animate-fill-both ease-in-out object-contain absolute -bottom-6 sm:-bottom-10 -left-6 sm:-left-10"
+            src="/images/btn_left.webp"
+            width={500}
+            height={500}
+            alt="Ornamen kiri bawah"
+            priority={true}
+          />
+          <Image
+            className="w-28 sm:w-52 animate-jump animate-infinite animate-duration-[7000ms] animate-delay-1000 animate-ease-in animate-reverse animate-fill-both ease-in-out object-contain absolute -bottom-6 sm:-bottom-10 -right-6 sm:-right-10"
+            src="/images/btn_right.webp"
+            width={500}
+            height={500}
+            alt="Ornamen kanan bawah"
+            priority={true}
+          />
         </div>
       </div>
     </div>
