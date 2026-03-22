@@ -15,11 +15,11 @@ export const metadata = {
   openGraph: {
     title: "Undangan Jeni dan Sodik",
     description: "Undangan Pernikahan Jeni ❤️ Sodik",
-    url: "https://undangan-Jeni-Sodik.vercel.app/",
+    url: "https://undangan-jeni-sodik.vercel.app/",
     type: "website",
     images: [
       {
-        url: "https://undangan-Jeni-Sodik.vercel.app/images/thumbnail.webp",
+        url: "https://undangan-jeni-sodik.vercel.app/jeni/main.png",
         width: 1200,
         height: 630,
         alt: "Undangan Pernikahan Jeni ❤️ Sodik",
@@ -30,7 +30,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Undangan Pernikahan Jeni ❤️ Sodik",
     description: "Pernikahan Jeni Nur Azizah dan Sodik Hermawan",
-    images: ["https://undangan-Jeni-Sodik.vercel.app/images/thumbnail.webp"],
+    images: ["https://undangan-jeni-sodik.vercel.app/jeni/main.png"],
   },
 };
 
