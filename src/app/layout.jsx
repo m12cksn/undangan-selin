@@ -7,30 +7,36 @@ import { poppins } from "./fonts";
 import { truculenta } from "./fonts";
 
 export const metadata = {
-  title: "Undangan Jeni dan Sodik",
-  description: "Undangan Pernikahan Jeni ❤️ Sodik",
+  metadataBase: new URL("https://undangan-jeni-sodik.vercel.app"),
+  title: "The Wedding of Jeni & Sodik",
+  description:
+    "Dengan penuh kebahagiaan, kami mengundang Bapak/Ibu/Saudara/i untuk hadir di acara pernikahan Jeni & Sodik.",
   icons: {
-    icon: "/favicon.ico", // Pastikan sesuai dengan path di folder public
+    icon: "/favicon.ico",
   },
   openGraph: {
-    title: "Undangan Jeni dan Sodik",
-    description: "Undangan Pernikahan Jeni ❤️ Sodik",
-    url: "https://undangan-jeni-sodik.vercel.app/",
+    title: "The Wedding of Jeni & Sodik",
+    description:
+      "Dengan penuh kebahagiaan, kami mengundang Bapak/Ibu/Saudara/i untuk hadir di acara pernikahan Jeni & Sodik.",
+    url: "/",
+    siteName: "Undangan Jeni & Sodik",
     type: "website",
+    locale: "id_ID",
     images: [
       {
-        url: "https://undangan-jeni-sodik.vercel.app/images/thumbnail.webp",
+        url: "/images/thumbnail.jpg",
         width: 1200,
         height: 630,
-        alt: "Undangan Pernikahan Jeni ❤️ Sodik",
+        alt: "The Wedding of Jeni & Sodik",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Undangan Pernikahan Jeni ❤️ Sodik",
-    description: "Pernikahan Jeni Nur Azizah dan Sodik Hermawan",
-    images: ["https://undangan-jeni-sodik.vercel.app/images/thumbnail.webp"],
+    title: "The Wedding of Jeni & Sodik",
+    description:
+      "Dengan penuh kebahagiaan, kami mengundang Bapak/Ibu/Saudara/i untuk hadir di acara pernikahan Jeni & Sodik.",
+    images: ["/images/thumbnail.jpg"],
   },
 };
 
