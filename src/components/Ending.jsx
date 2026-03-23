@@ -52,13 +52,17 @@ const Ending = () => {
                     data-aos-easing="linear"
                     data-aos-duration="1500"
                     className="text-3xl text-slate-700"
-                  ></h1>
+                  >
+                    Jeni Nur Aziza
+                  </h1>
                   <h1
                     data-aos="fade-up"
                     data-aos-easing="linear"
                     data-aos-duration="1500"
                     className="text-2xl text-slate-700"
-                  ></h1>
+                  >
+                    0961137984
+                  </h1>
                 </div>
               </div>
 
@@ -73,7 +77,7 @@ const Ending = () => {
               />
             </div>
           </div>
-          <div className="relative max-w-xs mx-auto">
+          {/* <div className="relative max-w-xs mx-auto">
             <Image
               data-aos="fade-up"
               data-aos-easing="linear"
@@ -120,7 +124,7 @@ const Ending = () => {
                 height={500}
               />
             </div>
-          </div>
+          </div> */}
           <div>
             <Image
               data-aos="fade-up"
